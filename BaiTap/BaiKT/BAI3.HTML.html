@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IN CÁC SỐ TỪ A ĐẾN B</title>
+</head>
+<body>
+<input type="text" id="ok">
+<input type="text" id="ok1">
+<button onclick="an()">ấn</button>
+<hr>
+<p id="done"></p>
+<script>
+    function an(){
+        // let Text = "";
+        let a = document.getElementById('ok').value;
+        let b = document.getElementById('ok1').value;
+        for (let i = a;i <= b;i++){
+            // Text = Text + i;
+            document.write(i);
+        }
+        // document.getElementById('done').innerHTML = Text;
+    }
+
+  // let a = +prompt('Số a:');
+  // let b = +prompt('Số b:');
+  // for(let i = a;i <= b;i++){
+  //     alert(i);
+  //     // console.log(i);
+  // }
+</script>
+</body>
+</html>

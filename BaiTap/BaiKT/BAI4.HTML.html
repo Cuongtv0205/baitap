@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH TÍCH CÁC SỐ TỪ 1 -->N</title>
+</head>
+<body>
+<input type="text" id="ok">
+<!--<input type="text" id="ok1">-->
+<button onclick="an()">ấn</button>
+<hr>
+<p id="done"></p>
+<script>
+   function an(){
+       let T = 1;
+       let n = +document.getElementById('ok').value;
+       for ( let i = 1; i <= n;i++){
+           T = T*i;
+       }document.write(T);
+   }
+
+  // let n = +prompt('Nhập số:')
+  // let T = 1;
+  // for (let i=1;i<=n;i++){
+  //   T = T*i;
+  // }
+  // document.write(T);
+  // console.log(T);
+</script>
+</body>
+</html>

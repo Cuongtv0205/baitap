@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm max trong mảng đã cho</title>
+</head>
+<body>
+<script>
+    let mang = [-3, 5, 1, 3, 2, 10];
+    let max = mang[0];
+    let c = 0;
+    for(let i =0;i<mang.length;i++){
+        if(mang[i] > max){
+            max = mang[i];
+            c = i;
+        }
+    }document.write('max là :' + max + '<br>' + 'vị trí là:' + c);
+    //lấy vị trí min trong mảng//
+    // let mang = [-5,-4,1,3,2,10];
+    // let min = mang[0];
+    // let c = 0;
+    // for(let i = 1;i<mang.length;i++ ){
+    //     if(mang[i]< min){
+    //         min = mang[i];
+    //         c = i;
+    //     }
+    // }document.write(' min là :' + min + '<br>' + 'vị trí là:' + c);
+</script>
+</body>
+</html>

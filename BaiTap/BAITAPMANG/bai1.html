@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"> In ra phần tử trong mảng</p>
+<script>
+    // in các ký tự trong mảng ra màn hình//
+    // const cars = ["Saab", "Volvo", "BMW"]
+    // document.getElementById('demo').innerHTML = cars;
+    //---2- in ra độ dài chuỗi---//
+    // const fruits = ["Banana","Orange","Apple","Mango"];
+    // let leghth = fruits.length;
+    // document.getElementById('demo').innerHTML = leghth;
+    const age = ["Thanh", "Huy", "Long", "Thai"];
+    let fist = age.length;
+    let  text = "<ul>";
+    for (let i = 0; i < fist; i++){
+        text = text + "<li>" + age[i] + "</li>";
+    }
+    text = text + "</ul>";
+    document.getElementById('demo').innerHTML = text;
+</script>
+</body>
+</html>

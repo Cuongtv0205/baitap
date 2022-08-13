@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết một chương trình JavaScript để thêm vào các phần tử trong một mảng và hiển thị chúng</title>
+</head>
+<body>
+<h2>Sample Screen</h2>
+<input type="text" id="ok">
+<input type="button" id="ok1" value="Add" onclick="mang1()">
+<input type="button" id="ok2" value="Display" onclick="mang2()">
+<p id="result"></p>
+<script>
+    let x = 0;
+    let mang = Array();
+    function mang1() {
+        mang[x] = document.getElementById('ok').value;
+        alert('Element:' + mang[x] + "Index" + x);
+        x++;
+        // document.getElementById('ok').value = "";
+    }
+    function mang2() {
+        let e = "<hr/>";
+        for (let i = 0; i < mang.length; i++) {
+            e = e + "Element" + i + " = " + mang[i] + "<br>";
+        }
+        document.getElementById('result').innerHTML = e;
+    }
+</script>
+</body>
+</html>
