@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+// let mang = prompt('Nhap vao')
+//     let arr = mang.split(',');
+//     console.log(arr);
+// let arr = "Đào Như Anh";
+// for (let i = 0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+// let mang = prompt('Nhap vao đi:')
+// console.log(mang.split(',').length)
+let str =  prompt('Nhập vào dãy số :');
+let arr = [];
+for(let i = 0; i<str.length;i++){
+    if(str[i] == str[i].toUpperCase()){
+        arr.push(str[i].toLowerCase());
+    }else {
+        arr.push(str[i].toUpperCase());
+    }
+}alert(arr.join(''))
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính diện tích, hàm tính chu vi hình tròn.
+        Gọi hàm vừa xây dựng được
+    </title>
+</head>
+<body>
+<script>
+    function dientichhinhtron(r) {
+        let s = r * r * 3.14;
+        document.write('Diện tích hình tròn là :' + s + '<br>');
+    }
+
+    function chuvihinhtrong(r) {
+        let c = r * 2 * 3.14;
+        document.write('Chu vi hình tròn là: ' + c)
+    }
+    let r = +prompt('Nhập vào:')
+     dientichhinhtron(r);
+     chuvihinhtrong(r);
+</script>
+</body>
+</html>

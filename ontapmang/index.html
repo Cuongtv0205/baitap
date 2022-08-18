@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 2, 3],
+        [6, 7, 8, 1]
+    ];
+/// Tinh tổng chia hết cho 3//
+    // console.log(arr[1][4])
+    // for ( let i =0;i<2;i++ ){
+    //     for (let j = 0;j< arr[i].length;j++){
+    //         document.write(arr[i][j] + ' ');
+    //     }document.write('<br>')
+    // }
+    // let Tong = 0;
+    // let Tich = 1;
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0;j < arr[i].length; j++) {
+    //         if(arr[i][j]%3==0){
+    //         Tong = Tong + arr[i][j];
+    //         Tich = Tich * arr[i][j];
+    //         }
+    //     }
+    // }
+    // document.write(Tich);
+    // document.write(Tong);
+    // //Tính tích//
+    // let Tich = 1;
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j< arr[i].length; j++) {
+    //         Tich = Tich * arr[i][j];
+    //     }
+    // }
+    // document.write(Tich);
+    // Đếm các phần tử chia 5 dư 1//
+    // Tìm max//
+
+    // let dem = 0;
+    // let max = arr[0][0]
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] % 5 == 1) {
+    //             dem = dem + 1;
+    //         }
+    //         if (arr[i][j]> max){
+    //             max = arr[i][j];
+    //         }
+    //     }
+    // }document.write(dem + '_' + max);
+    //Tìm vị trí//
+
+    let a = +prompt('Mời bạn nhập vào:');
+     for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j]==a){
+                document.write(' ' + i + ' ' + j + '<br>' );
+            }
+        }
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+      Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+    </title>
+</head>
+<body>
+<h1>Thứ tự giảm dần</h1>
+<p id="demo2"></p>
+<script>
+  let mang =[ 6,4,2,-7,1,9,3];
+  mang.sort(function (a,b)
+  {return b-a});
+  document.getElementById('demo2').innerHTML = mang;
+</script>
+</body>
+</html>

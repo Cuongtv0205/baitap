@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Thứ tự của mảng 1 bằng thứ tự của mảng 2 //
+    let ngoiSaoCanTim = prompt("Nhập tên ngôi sao :");
+    document.write(timChomSao(ngoiSaoCanTim));
+    function timChomSao(tenNgoiSao) {
+        let arrNgoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+        let arrChomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+        for (let i = 0; i < arrNgoiSao.length; i++) {
+            if (arrNgoiSao[i] == tenNgoiSao) {
+                let tenChomSao = arrChomSao[i]
+                return tenChomSao
+            }
+        }
+    }
+</script>
+</body>
+</html>

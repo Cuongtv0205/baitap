@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //in ra các mảng nhỏ trong mảng lớn//
+//   let mang = [
+//     [1, 2, 1, 24],
+//     [8, 11, 9, 4],
+//     [7, 0, 7, 27],
+//     [7, 4, 28, 14],
+//     [3, 10, 26, 7]
+//   ];
+//  for(let i = 0;i<mang.length;i++){
+//      for (let j = 0;j< mang[i].length;j++){
+// document.write(mang[i][j] + " ") //thành hàng
+//      }
+//      document.write('<br>');// xuống dòng khi kết thúc mảng của dãy con
+//  }
+    let mang = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+      ];
+    let sum = 0; // tính tổng
+    let num = 1; // tính tích
+      for(let i = 0;i<mang.length;i++) {
+          document.write("row" + i + "<br>");
+          for (let j = 0; j < mang[i].length; j++) {
+              document.write( " " + mang[i][j] + "<br>"); // thành cột//
+              sum = sum +mang[i][j];//tính tổng
+              num = num*mang[i][j]; // tính tích
+          }
+      }
+</script>
+</body>
+</html>

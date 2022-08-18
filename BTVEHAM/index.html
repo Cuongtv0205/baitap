@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi nhiêt độ</title>
+</head>
+<body>
+<script>
+    let nhietdo = prompt('Mời bạn nhập nhiệt độ cần chuyển :');
+    function DO(valNum) {
+        valNum = parseFloat(valNum)
+        let a = (valNum-32)/1.8;
+        // document.write((valNum - 32) / (1.8));
+        document.write(`<p> Nhiệt độ là:<br> ${a} </p>`)
+    }
+    DO(nhietdo);
+</script>
+</body>
+</html>

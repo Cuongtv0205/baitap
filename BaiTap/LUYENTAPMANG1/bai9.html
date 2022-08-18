@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử,
+      gọi là mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+      Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c.
+      Hiển thị mảng c.
+    </title>
+</head>
+<body>
+<h1 id="demo1">Kết quả nối mảng</h1>
+<script>
+  let mang1 = [ 1,4,2,6,8,9,3,5];
+  let mang2 = [10,23,8,9,4,2,6,7];
+  let mangc = mang1.concat(mang2);
+  document.getElementById('demo1').innerHTML = mangc;
+</script>
+</body>
+</html>

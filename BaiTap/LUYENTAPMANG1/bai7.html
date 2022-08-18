@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+        Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+    </title>
+</head>
+<body>
+<!--<input type="text" id="ok">-->
+<!--<button type="button" onclick="kich()">Click</button>-->
+<!--<h1 id="demo"></h1>-->
+<script>
+    // function kich() {
+    //     let arry = [1, 3, 4, 6, 8, 9, 2];
+    //     document.getElementById('ok').innerHTML = arry;
+    //     arry.pop();
+    //     document.getElementById('demo').innerHTML = arry;
+    // }
+    let mang = [];
+    for ( let i =0; i<5;i++){
+        let a = +prompt('Nhập phần tử thứ :' + i)
+        mang.push(a);
+    }
+    let v = +prompt('Nhập số cần xóa :');
+    let viTri = mang.indexOf(v);
+    if(viTri== -1){
+        alert( " Không có !");
+    }else {
+        mang.splice(viTri,1);
+        mang.push(0);
+        console.log(mang);
+    }
+</script>
+</body>
+</html>
