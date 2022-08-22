@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Di chuyển đối tượng</title>
+</head>
+<body>
+<img src="https://phunugioi.com/wp-content/uploads/2020/10/hinh-anh-chibi-buon.jpg" alt="" id="demo">
+<script>
+    class diChuyen {
+        x;
+        y;
+        z;
+        k;
+        speedX;
+        speedY;
+        src;
+        constructor(x, y, z, k) {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+            this.k = k;
+            this.speedX = 20;
+            this.speedY = 20;
+            this.src = 'https://phunugioi.com/wp-content/uploads/2020/10/hinh-anh-chibi-buon.jpg';
+        }
+
+        move() {
+            this.x += this.speedX;
+            this.y -= this.speedY
+            this.display();
+        }
+
+        display() {
+            let diChuyen = document.getElementById('demo');
+            diChuyen.style.position = 'absolute';
+            diChuyen.style.width = this.k + 'px';
+            diChuyen.style.height = this.z + 'px';
+            diChuyen.style.top = this.y + 'px';
+            diChuyen.style.left = this.x + 'px'
+            diChuyen.src = this.src;
+        }
+    }
+
+    let diChuyen1 = new diChuyen(100, 100, 50, 50);
+    diChuyen1.display()
+    window.addEventListener('keydown', (e) => {
+        if (e.keyCode == 40) {
+            diChuyen1.speedX = 0;
+            diChuyen1.speedY = -20;
+            diChuyen1.move();
+        }
+         if (e.keyCode == 37) {
+             diChuyen1.speedX =-20;
+             diChuyen1.speedY = 0;
+             diChuyen1.move();
+         }
+        if (e.keyCode == 38) {
+            diChuyen1.speedX = 0;
+            diChuyen1.speedY =20;
+            diChuyen1.move();
+        }
+         if (e.keyCode == 39) {
+             diChuyen1.speedX = 20;
+             diChuyen1.speedY = 0;
+             diChuyen1.move();
+         }
+    })
+
+    function Chuyen() {
+        diChuyen1.move();
+        if(diChuyen1.x>= window.innerWidth){
+            diChuyen1.x =-20;
+    }
+    requestAnimationFrame(Chuyen);
+    }
+
+</script>
+</body>
+</html>

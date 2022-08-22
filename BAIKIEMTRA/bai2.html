@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+function insertNumberToArray(array,x,index){
+    let res = [];
+        if ((index < 0) || (index > array.length)) {
+            res = array;
+        } else {
+            for (let i=0;i<index;i++){
+                res[i] =array[i];
+            }
+            res[index]= x;
+            for(let i = index+1;i<=array.length;i++){
+                res[i] = array[i-1];
+            }
+        }
+    return res;
+}
+document.write(insertNumberToArray())
+</script>
+</body>
+</html>

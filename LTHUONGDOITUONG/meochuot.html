@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class mouse{
+    name;
+    hp;
+    constructor(x,y) {
+      this.name= x;
+      this.hp = y;
+    }
+    isDied(){
+      if(this.hp<0){
+      alert('Chết');
+      }
+    }
+  }
+  class Cat{
+    name;
+    weidth;
+    constructor(x,y) {
+     this.name = x;
+     this.weidth = y;
+    }
+    eat(mouse){
+        this.weidth++;
+        mouse.hp--;
+        mouse.isDied();
+    }
+      getInfo(){
+          alert('Thông tin là :' + this.name + ', '+ this.hp);
+      }
+  }
+  let m1 = new mouse('jelly', 0);
+  let m2 = new mouse('tooti' , 4);
+  let c1 = new Cat('Tom' , 9);
+  c1.eat(m1);
+  c1.eat(m2);
+</script>
+</body>
+</html>

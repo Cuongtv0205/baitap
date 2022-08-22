@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ trong hướng đối tượng</title>
+</head>
+<body>
+<script>
+    class nhietDo {
+        doC;
+        constructor(doC) {
+            this.doC = doC;
+        }
+        doF() {
+            return 9 / 5 * this.doC + 32;
+        }
+        doK() {
+            return this.doC + 273.15;
+        }
+    }
+    let nhietDo1 = new nhietDo(+prompt('Mời bạn nhập nhiệt độ muốn đổi:'));
+    let my_doF = nhietDo1.doF() // gán cho độ F nhận giá trị của nhiệt độ 1
+    let my_doK = nhietDo1.doK(); // gán cho độ K nhận giá trị của nhiệt độ 1
+    document.write('Độ F là :' + my_doF + '<br>' + 'Độ K là :' + my_doK);
+</script>
+</body>
+</html>

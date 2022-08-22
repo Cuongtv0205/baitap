@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game lái xe</title>
+</head>
+<body>
+<div id="ok"></div>
+<script>
+    class Hero {
+        image;
+        top;
+        left;
+        size;
+        constructor(image, top, left, size) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+        }
+
+        Up() {
+            this.top += 20
+        }
+
+        Down() {
+            this.top -= 20
+        }
+
+        Right() {
+            this.left += 20
+        }
+
+        Left() {
+            this.left -= 20
+        }
+
+        displayHero() {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:relative;" >'
+        }
+    }
+
+    let hero = new Hero('https://img.lovepik.com/element/40163/8440.png_860.png',50, 80, 200);
+    document.getElementById('ok').innerHTML = hero.displayHero();
+
+    function showHero() {
+        document.getElementById('ok').innerHTML = hero.displayHero();
+    }
+
+    function moveSelection() {
+        window.addEventListener('keydown', function (event) {
+            switch (event.keyCode) {
+
+                case 37:
+                    hero.Left()
+                    showHero()
+                    break;
+                case 39:
+                    hero.Right()
+                    showHero()
+                    break;
+                case 38:
+                    hero.Down()
+                    showHero()
+                    break;
+                case 40:
+                    hero.Up()
+                    showHero()
+                    break;
+            }
+        })
+    }
+    moveSelection();
+</script>
+</body>
+</html>

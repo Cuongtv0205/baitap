@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="DemoCanvas" style="width: 300px;height:400px"></canvas>
+<script>
+  class rectangle{
+    long;
+    weight;
+    constructor(long,weight) {
+      this.long = long;
+      this.weight = weight;
+    }
+    getLong(){
+        return this.long;
+    }
+    getWeight(){
+        return this.weight;
+    }
+    getArea(){
+     return this.long * this.weight;
+    }
+    getS(){
+        return (this.long + this.weight)*2;
+    }
+  }
+ let rectangle1 = new rectangle(100,100);
+  let long = rectangle1.getLong();
+  let weight = rectangle1.getWeight();
+  let canvas = document.getElementById("DemoCanvas");
+  let ctx = canvas.getContext('2d');
+  ctx.fillStyle='#fa4b2a';
+  ctx.fillRect(10, 10, long, weight)
+</script>
+</body>
+</html>
